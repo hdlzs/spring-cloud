@@ -1,0 +1,26 @@
+zuul:
+  routes:
+    users:
+      path: /hi*
+      serviceId: users
+      stripPrefix: false
+    test:
+      path: /test/*
+      serviceId: test
+      stripPrefix: false
+
+ribbon:
+  eureka:
+    enabled: false
+
+users:
+  ribbon:
+    listOfServers: localhost:8762,localhost:8765
+   # ConnectTimeout: 250
+   # ReadTimeout: 1000
+    #OkToRetryOnAllOperations: false
+    #MaxAutoRetriesNextServer: 0
+    #MaxAutoRetries: 1
+test:
+  ribbon:
+      listOfServers: localhost:8090
