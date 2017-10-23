@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>gateway</name>
-	<description>Spring Boot</description>
+	<description>Spring Boot12212</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
